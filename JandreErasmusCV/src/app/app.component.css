@@ -1,0 +1,41 @@
+.scrollNavBar {
+    background-color:#333;
+    position: absolute;
+    top: 0;
+    z-index:1;
+    width: 100%;
+    height: 50px;
+    }
+
+.scrollNavBar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.scrollNavBar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.scrollNavBar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.body {
+    padding-top: 80px;
+    position:absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: auto;
+    text-align: center;
+    }
+.body h1{
+    font-family: sans-serif;
+    text-align: center;
+}
