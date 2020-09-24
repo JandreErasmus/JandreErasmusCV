@@ -22,10 +22,12 @@ nav ul{
     display: flex;
 }
 nav ul li{
+    
     list-style: none;
     
 }
 nav ul li a{
+    
     line-height: 80px;
     color:#fff;
     padding: 5px 20px;
@@ -60,6 +62,8 @@ nav ul li a:hover{
     
 } 
 .sec2content{
+    
+    height: 100vh;
     color: #fff;
     background-color: #262626;
     padding: 4px 300px;
@@ -77,6 +81,8 @@ nav ul li a:hover{
 }
 
 .sec3content{
+    
+    height: 100vh;
     color: #262626;
     background-color: #fff;
     padding: 4px 300px;
