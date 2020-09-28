@@ -28,7 +28,7 @@
  
   <section id = "About" class="sec2content">
     <h1>About</h1>
-    <h2>Hallo, I am Jandre Erasmus. I am currently a final year student studing for a degree in Information Technology at the North-West University.</h2>
+    <h2>Hallo, I am Jandre Erasmus. I am currently a final-year student studing for a degree in Information Technology at the North-West University.</h2>
     <p>I like to describe myself as a well rounded person. I have worked on a number of projects while I was busy studing at the University and as a student I don't define myself by the work that I have done, but to the work that I want to do, as I student to the craft, I want to keep learning new skills, challenge myself to become the best version of me that I possible can be.</p>
     <p>I like to think that I am a highly energetic person, fueled by curiosity to keep working on my craft and expand my skill set. I am passionate, expresive and a natural leader. I don't settle for anything other than perfection.</p>
     <p>My energetic personallity feuls me in the persuit of many of my interests, hobbies and my study. I am a fast learner that is not afraid to learn new skills and tools in my persuit for success.</p>
@@ -51,6 +51,15 @@
 
   <section id="Games" class="sec4content">
    <h1>Games</h1>
+   
+  </section>
+
+  <section id="Employment History" class = "sec5content">
+    <h1>Employment History</h1>
+    <ul *ngFor="let user of games">
+      <a href="{{user.html_url}}">{{user.html_url}}</a>
+
+    </ul>
   </section>
 </body>
 </html>

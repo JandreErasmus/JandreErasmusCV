@@ -1,22 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import {SteamApiService} from './steam-api.service';
+import {SteamApiService} from './steam-api.service'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'JandreErasmusCV';
-  constructor(private steamApiService:SteamApiService){
-    this.steamApiService.getData().subscribe(data=>{
-      console.warn(data)
+  games =[]
+  constructor(private steamServices:SteamApiService){}
+
+  getRepos() {
+
+    this.steamServices.getData().subscribe((data) => {
+      console.log(data)
+      this.games = data;
     })
   }
-  ngOnInit(){
-   
-    
-    
-  }
-
   
+  ngOnInit()
+  {
+    this.getRepos();
+  }
 }
