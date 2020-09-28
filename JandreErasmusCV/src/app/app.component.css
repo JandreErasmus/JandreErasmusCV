@@ -87,6 +87,7 @@ nav ul li a:hover{
     background-color: #fff;
     padding: 4px 300px;
     text-align: center;
+    justify-content:center ;
     text-justify: auto;
     font-family: sans-serif;
     font-size: 22px;

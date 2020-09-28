@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SteamApiService} from './steam-api.service'
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-root',
