@@ -10,8 +10,7 @@ export class SteamApiService {
   constructor(private http:HttpClient) { }
 
   getData():Observable<any> {
-
-    const url = "https://api.github.com/users/JandreErasmus/repos";  
+    const url = "https://api.github.com/users/JandreErasmus/repos";
     return this.http.get<any>(url)
   }
 }

@@ -12,7 +12,7 @@
       <li><a href="#Home">Home</a></li>
       <li><a href="#About">About</a></li>
       <li><a href="#Sport">Sport</a></li>
-      <li><a href="#Games">Games</a></li>
+      <li><a href="#Repos">Repos</a></li>
       <li><a href="#Employment History">Employment History</a></li>
     </ul>
   </nav>
@@ -49,17 +49,15 @@
     <p>What I have learned through sport is that whatever you want to become is possible if you work hard for it and realise that success isn't an over night thing like a bomb that when you press the detenation button and BOOM, no it is more like a firework with a slow burning fuse, you are never quite sure when the grand finally will happen, but you know it's around the corner.</p>
   </section>
 
-  <section id="Games" class="sec4content">
-   <h1>Games</h1>
-   
+  <section id="Employment History" class="sec4content">
+    <h1>Employment History</h1>
   </section>
 
-  <section id="Employment History" class = "sec5content">
-    <h1>Employment History</h1>
+  <section id="Repos" class = "sec5content">
+    <h1>Repos</h1>
     <ul *ngFor="let user of games">
       <a href="{{user.html_url}}">{{user.html_url}}</a>
-
-    </ul>
+    </ul>   
   </section>
 </body>
 </html>
