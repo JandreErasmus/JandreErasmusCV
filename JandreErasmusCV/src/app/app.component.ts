@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 import {SteamApiService} from './steam-api.service'
-
+import {YoutubeApiServiceService} from './youtube-api-service.service'
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ import {SteamApiService} from './steam-api.service'
 export class AppComponent implements OnInit{
   title = 'JandreErasmusCV';
   repos =[]
-  constructor(private steamServices:SteamApiService){}
+  chann :any
+  constructor(private steamServices:SteamApiService, private youtubeService:YoutubeApiServiceService){}
 
   getRepos() {
 
@@ -23,5 +25,9 @@ export class AppComponent implements OnInit{
   ngOnInit()
   {
     this.getRepos();
+    this.youtubeService.getChannel().subscribe((data) => {
+      console.log(data)
+      this.chann = data.items;
+    })
   }
 }

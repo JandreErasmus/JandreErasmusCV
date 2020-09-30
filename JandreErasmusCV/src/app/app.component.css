@@ -150,4 +150,14 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none;}
 a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
+
+.youtubeThumbnail {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+  }
   
+.youtubeThumbnail:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }  
