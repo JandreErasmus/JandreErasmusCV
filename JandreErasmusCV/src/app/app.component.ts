@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SteamApiService} from './steam-api.service'
-import * as $ from "jquery";
+
 
 @Component({
   selector: 'app-root',
@@ -9,14 +9,14 @@ import * as $ from "jquery";
 })
 export class AppComponent implements OnInit{
   title = 'JandreErasmusCV';
-  games =[]
+  repos =[]
   constructor(private steamServices:SteamApiService){}
 
   getRepos() {
 
     this.steamServices.getData().subscribe((data) => {
       console.log(data)
-      this.games = data;
+      this.repos = data;
     })
   }
   

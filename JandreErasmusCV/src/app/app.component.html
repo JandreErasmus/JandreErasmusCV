@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <link rel="stylesheet" href="app.component.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JandreErasmuscv</title>
 </head>
 <body>
+  
   <nav>
     <ul>
       <li><a href="#Home">Home</a></li>
@@ -22,6 +24,7 @@
       <a href="https://www.instagram.com/jandreerasmus/"><img src="../assets/images/InstagramLogo.PNG" alt="Instagram"></a>
       <a href="https://www.facebook.com/jandre.erasmus.90"><img src="../assets/images/FaceBookLogo.PNG" alt="Facebook"></a>
       <a href="https://twitter.com/JandreErasmus2"><img src="../assets/images/TwitterLogo.PNG" alt="Twitter"></a>
+      
     </p>
     
   </section>
@@ -51,12 +54,17 @@
 
   <section id="Employment History" class="sec4content">
     <h1>Employment History</h1>
+    <p>Before I started studing at the university I worked at Bakkielinings & Sandblasting as a Debit and Credit Clerk(16.01.2017 - 2017.12.15). My duties included of processing invoices and bank account on Pastel, the owner is Paul Erasmus, telephone - 082 888 9171.</p>
+    <p>I also worked vacation job at Bothaville Rekenaar dienste. where I helped build computers and general maintenance on computers. The owner is Kobie de Beer, telephone - 083 284 9248</p>
+    <p>I had another vacation job at Madeleine Neilson Ouditeure, where I helped with filing and sorting of documents and general computer maintenance. The owner is Madeleine Neilson, telephone - 083 257 6061.</p>
+    
   </section>
 
   <section id="Repos" class = "sec5content">
     <h1>Repos</h1>
-    <ul *ngFor="let user of games">
-      <a href="{{user.html_url}}">{{user.html_url}}</a>
+    <p>Here is a list of all my previous projects. Make sure to check this list again as it will update as I work on new projects!</p>
+    <ul *ngFor="let user of repos">
+      <a href="{{user.html_url}}"><button class="button repobtn">{{user.html_url}}</button></a>
     </ul>   
   </section>
 </body>
