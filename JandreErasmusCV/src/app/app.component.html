@@ -14,8 +14,8 @@
       <li><a href="#Home">Home</a></li>
       <li><a href="#About">About</a></li>
       <li><a href="#Sport">Sport</a></li>
-      <li><a href="#Repos">Repos + youtube</a></li>
       <li><a href="#Employment History">Employment History</a></li>
+      <li><a href="#Repos">Repos + youtube</a></li>
     </ul>
   </nav>
   <section id="Home" class="sec1">
@@ -67,10 +67,19 @@
       <a target="blank" href="{{user.html_url}}"><button class="button repobtn">{{user.html_url}}</button></a>
     </ul>
     <p>Here is my youtube channel where I post how-to-videos on programming, related content and occasionally gameplay clips of me and my friends ;)</p>
-    <ul *ngFor="let channel of chann; let i = index">
+    <ul *ngFor="let channel of chann">
       <a target="blank" href="https:/www.youtube.com/channel/{{channel.id.channelId}}"> <img class="youtubeThumbnail" src="{{channel.snippet.thumbnails.medium.url}}" alt="Thumbnail"></a>
       <br>{{channel.snippet.channelTitle}}
-    </ul>   
+    </ul>
   </section>
+  <footer class="footer">
+    <p>Thank you for reading through my CV, as a lifelong fan of Chuck Norris. I decided to end my CV with a joke of the man himself. PS if the joke cracked you up, refresh the page to get a new one!</p>
+    <div class="joke-wrapper" *ngFor="let j of jokes">
+      <div class="joke">
+        <img src="{{j.icon_url}}" alt="Icon">
+        <p>{{j.value}}</p>
+      </div>
+    </div>  
+  </footer>
 </body>
 </html>
