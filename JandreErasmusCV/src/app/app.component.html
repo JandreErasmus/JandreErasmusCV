@@ -60,15 +60,15 @@
     
   </section>
 
-  <section id="Repos + youtube" class = "sec5content">
-    <h1>Repos</h1>
+  <section id="Repos" class = "sec5content">
+    <h1>Repos + youtube</h1>
     <p>Here is a list of all my previous projects. Make sure to look at this list again as it will update as I work on new projects!</p>
     <ul *ngFor="let user of repos">
       <a target="blank" href="{{user.html_url}}"><button class="button repobtn">{{user.html_url}}</button></a>
     </ul>
-    <p>Here is my youtube channel, where I post how-to-videos on programming and related content and occasionally gameplay clips of me and my friends ;)</p>
-    <ul *ngFor="let channel of chann">
-      <a target="blank" href="https:/www.youtube.com/channel/{{channel.id.channelid}}"> <img class="youtubeThumbnail" src="{{channel.snippet.thumbnails.medium.url}}" alt="Thumbnail"></a>
+    <p>Here is my youtube channel where I post how-to-videos on programming, related content and occasionally gameplay clips of me and my friends ;)</p>
+    <ul *ngFor="let channel of chann; let i = index">
+      <a target="blank" href="https:/www.youtube.com/channel/{{channel.id.channelId}}"> <img class="youtubeThumbnail" src="{{channel.snippet.thumbnails.medium.url}}" alt="Thumbnail"></a>
       <br>{{channel.snippet.channelTitle}}
     </ul>   
   </section>
