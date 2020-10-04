@@ -1,10 +1,12 @@
+/*This is the styliing for the body of the html */
 body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
+/*Here is where I styled th outside of the nsvigation bar */
 nav{
-    position: fixed;
+    position: fixed;/*This is done to fix the position of the navigation bar */
     top: 0;
     left: 0;
     width: 100%;
@@ -14,18 +16,20 @@ nav{
     transition: .5s;
     background-color:#262626;
 }
-
+/*Here is where I styled the unordered bullet list */
 nav ul{
-    float: left;
+    float: left; /*This is used to display the list on the left side of the navigation bar */
     margin: 0;
     padding: 0;
     display: flex;
 }
+/*This is where I styled the list */
 nav ul li{
     
-    list-style: none;
+    list-style: none; /*This is done to remove the bullet point of the bullet list */
     
 }
+/*This is where I styled the a href of the bullet list */
 nav ul li a{
     
     line-height: 80px;
@@ -37,11 +41,13 @@ nav ul li a{
     transition: .5s;
     
 }
+/*This is the styling of the a href when you hover over the link and also when the link was pressed */
 nav ul li a.active,
 nav ul li a:hover{
     color: #262626;
     background: #fff;
 }
+/*Here is the styling of the Home section of the html */
 .sec1{
     width: 100%;
     height: 100%;
@@ -51,6 +57,7 @@ nav ul li a:hover{
     background-size: cover;
      
 }
+/*This is where I styled the moto on the home page and also how I positioned the moto */
 .sec1 p{
     display: block;
     width: 400px;
@@ -61,9 +68,10 @@ nav ul li a:hover{
     font-size: 22px;
     
 } 
+/*This is where I styled the about tab */
 .sec2content{
     
-    height: 90%;
+    height: 90%; /*This is to display 90% of the screen height*/
     color: #fff;
     background-color: #262626;
     padding: 4px 300px;
@@ -79,10 +87,10 @@ nav ul li a:hover{
 .sec2content h2{
     font-size: 28px;
 }
-
+/*This is the style used for the sport tab */
 .sec3content{
     
-    height: 140%;
+    height: 140%;/*This is to display 140% of the screen height*/
     color: #262626;
     background-color: #fff;
     padding: 4px 300px;
@@ -92,11 +100,12 @@ nav ul li a:hover{
     font-family: sans-serif;
     font-size: 22px;
 }
+/*This was used for the images in the sport tab, this makes the images also responsive to the screen size */
 .sec3content img{
     width: 40%;
     height: auto;
 }
-
+/*This is the styling for the employment history */
 .sec4content{
     height: 100%;
     color: #fff;
@@ -107,7 +116,7 @@ nav ul li a:hover{
     font-family: sans-serif;
     font-size: 22px;
 }
-
+/*This is the style for the repos tab */
 .sec5content{ 
     height: 100%;
     color: #262626;
@@ -120,51 +129,55 @@ nav ul li a:hover{
     
 }
 
-
+/*This is the styling for the buttons that the repos is displayed on */
 .button {
     background-color: white;
     border: none;
     color: #262626;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none;/*This is used to clear the blue of a hyperlink, in other words the text color of the link wil stay the same.*/
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
   }
-  
+  /*This is the border of the button */
 .repobtn {
     border: 2px solid  #262626;
   }
-  
+  /*This is the styling of the button when you hover over the button */
   .repobtn:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     padding: 18px 34px;
     font-size: 18px;
   }
+  /*This is the button style when the button is clicked */
   .repobtn:active {
     background-color: #262626;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+  /*This is used for the a href link that the color of the link doesn't change blue after you used the link */
 a { text-decoration: none; color: #262626; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none;}
 a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 
+/*This is the styling used to display the thumbnail */
 .youtubeThumbnail {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 250px;
   }
-  
+/*This is the styling for when you hover over the youtube thumbnail */
 .youtubeThumbnail:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
+/*This is the styling for the footer of the html page */
 .footer{
     height: 30%;
     color: #fff;
@@ -175,20 +188,23 @@ a:hover, a:active { text-decoration: none; }
     font-family: sans-serif;
     font-size: 22px;
 }
+/*This is the styling for the container where the joke is going to be displayed */
 .joke-wrapper{
     padding: 15px 10px;
     border: 1px solid #aaaaaa;
     margin-bottom: 15px;
 }
+/*This is the styling of the joke inside the container */
 .joke-wrapper .joke{
     display: flex;
 }
+/*This is the styling for the image inside the container and is also responsive to the screen size */
 .joke-wrapper .joke img{
     width: 100%;
     height: auto;
     flex: 1;
 }
-
+/*This is the styling for the actual joke itself. */
 .joke-wrapper .joke p{
     flex: 8;
     margin-left: 20px;

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <link rel="stylesheet" href="app.component.css">
   <script src="jquery-3.5.1.min.js"></script>
   <meta charset="UTF-8">
@@ -11,6 +10,7 @@
 <body>
   <nav>
     <ul>
+      <!--Here is my navigation bar where I have set the id for my references in the website at different headings -->
       <li><a href="#Home">Home</a></li>
       <li><a href="#About">About</a></li>
       <li><a href="#Sport">Sport</a></li>
@@ -19,8 +19,10 @@
     </ul>
   </nav>
   <section id="Home" class="sec1">
+    <!--Here is my home page where there is a small moto and where the social media is incorperated-->
     <p>I believe that if life gives you lemons you should make lemonade and try to find somebody whose life has given them vodka and have a party</p>
     <p class = "SocialMedia">
+      <!--Here I just use a standard a href link, whem clicking the link it redirects you to my social media platforms. I used the target="blank" for when you click on the link it opens a new tab-->
       <a target="blank"href="https://www.instagram.com/jandreerasmus/"><img src="../assets/images/InstagramLogo.PNG" alt="Instagram"></a>
       <a target="blank"href="https://www.facebook.com/jandre.erasmus.90"><img src="../assets/images/FaceBookLogo.PNG" alt="Facebook"></a>
       <a target="blank"href="https://twitter.com/JandreErasmus2"><img src="../assets/images/TwitterLogo.PNG" alt="Twitter"></a>
@@ -30,6 +32,7 @@
   </section>
  
   <section id = "About" class="sec2content">
+    <!--Here is the about tab where I just tell a little about myself-->
     <h1>About</h1>
     <h2>Hallo, I am Jandre Erasmus. I am currently a final-year student studing for a degree in Information Technology at the North-West University.</h2>
     <p>I like to describe myself as a well rounded person. I have worked on a number of projects while I was busy studing at the University and as a student I don't define myself by the work that I have done, but to the work that I want to do, as I student to the craft, I want to keep learning new skills, challenge myself to become the best version of me that I possible can be.</p>
@@ -42,9 +45,11 @@
   </section>
 
   <section id = "Sport" class="sec3content">
+    <!--This is the sport tab where I talk about my sport achievments-->
     <h1>Sport</h1>
     <p>As I have mentioned above, I have a lot of hobbies and sport is definitely one of the important if not the most inportant one in my life. Through all of my life I have always been fond of sports. I played a lot of different sports and each one of them has learned my a valuable lesson.</p>
     <p>I played for my highschool's first team golf where we played in the glacier open in Bloemfontein in 2015 and what golf has teached me in the 7+ years that I played the game, is that you can't expect to see results straight away, there is a process that needs to be followed and this lesson I have carried over in every aspect of my life. You can't expect to see results straight away in anything you do, you need to be patient and keep a consistant work rate and before you know the results will come.</p>
+    <!--Here I used a img tag to display the pictures-->
     <p><img src="../assets/images/Golf.png" alt="GlacierOpen"></p>
     <p>I played for my highschool's first team cricket for 4 years, I received my O/19 National colours when I was in grade 11. I also played for Bothaville and Kroonstad cricket clubs.</p>
     <p>What I have learned through the years of playing cricket is that teamwork is vital for success, and that the team that works together, wins together. On the cricket field is where I have aquired and evolved my leadership qualities.</p>
@@ -53,6 +58,7 @@
   </section>
 
   <section id="Employment History" class="sec4content">
+    <!--Here is my employment history where I list my previous employments-->
     <h1>Employment History</h1>
     <p>Before I started studing at the university I worked at Bakkielinings & Sandblasting as a Debit and Credit Clerk(16.01.2017 - 2017.12.15). My duties included of processing invoices and bank account on Pastel, the owner is Paul Erasmus, telephone - 082 888 9171.</p>
     <p>I also worked vacation job at Bothaville Rekenaar dienste. where I helped build computers and general maintenance on computers. The owner is Kobie de Beer, telephone - 083 284 9248</p>
@@ -61,19 +67,25 @@
   </section>
 
   <section id="Repos" class = "sec5content">
+    <!--Here is where I list all my previous projects as well as my youtube videos-->
     <h1>Repos + youtube</h1>
     <p>Here is a list of all my previous projects. Make sure to look at this list again as it will update as I work on new projects!</p>
+    <!--Below is a for loop where I loop through the repos array, the repos array stored all my projects-->
     <ul *ngFor="let user of repos">
+      <!--Here I use the "user.html_url" to display the url to all of my repos that I have done on github, I used a standard a href to refrence the url and inside the a href I used a button tag to make the link more appropriate -->
       <a target="blank" href="{{user.html_url}}"><button class="button repobtn">{{user.html_url}}</button></a>
     </ul>
     <p>Here is my youtube channel where I post how-to-videos on programming, related content and occasionally gameplay clips of me and my friends ;)</p>
+    <!--Below is also a for loop where I display my Youtube channel, I used an img tag inside the a href tag so that the picture is clickable and when it is clicked it redirects you to the youtube channel on a new tab-->
     <ul *ngFor="let channel of chann">
       <a target="blank" href="https:/www.youtube.com/channel/{{channel.id.channelId}}"> <img class="youtubeThumbnail" src="{{channel.snippet.thumbnails.medium.url}}" alt="Thumbnail"></a>
       <br>{{channel.snippet.channelTitle}}
     </ul>
   </section>
   <footer class="footer">
+    <!--Here is my footer where I used the Chuck Norris api to display a Chuck Norris joke everytime the page gets reloaded-->
     <p>Thank you for reading through my CV, as a lifelong fan of Chuck Norris. I decided to end my CV with a joke of the man himself. PS if the joke cracked you up, refresh the page to get a new one!</p>
+    <!--Below is the for loop I used to traverse through the loop and display the joke evertime the page gets loaded-->
     <div class="joke-wrapper" *ngFor="let j of jokes">
       <div class="joke">
         <img src="{{j.icon_url}}" alt="Icon">
