@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="app.component.css">
-  <script src="jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JandreErasmuscv</title>
 </head>
 <body>
-  <nav>
-    <ul>
-      <!--Here is my navigation bar where I have set the id for my references in the website at different headings -->
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#About">About</a></li>
-      <li><a href="#Sport">Sport</a></li>
-      <li><a href="#Employment History">Employment History</a></li>
-      <li><a href="#Repos">Repos + youtube</a></li>
-    </ul>
-  </nav>
+  <script>function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }</script>
+  <div class="topnav" id="myTopnav">
+    <a href="#Home" class="active">Home</a>
+    <a href="#About">About</a>
+    <a href="#Sport">Sport</a>
+    <a href="#Employment History">Employment History</a>
+    <a href="#Repos">Repos + youtube</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   <section id="Home" class="sec1">
     <!--Here is my home page where there is a small moto and where the social media is incorperated-->
     <p>I believe that if life gives you lemons you should make lemonade and try to find somebody whose life has given them vodka and have a party</p>
@@ -34,14 +42,16 @@
   <section id = "About" class="sec2content">
     <!--Here is the about tab where I just tell a little about myself-->
     <h1>About</h1>
-    <h2>Hallo, I am Jandre Erasmus. I am currently a final-year student studing for a degree in Information Technology at the North-West University.</h2>
-    <p>I like to describe myself as a well rounded person. I have worked on a number of projects while I was busy studing at the University and as a student I don't define myself by the work that I have done, but to the work that I want to do, as I student to the craft, I want to keep learning new skills, challenge myself to become the best version of me that I possible can be.</p>
-    <p>I like to think that I am a highly energetic person, fueled by curiosity to keep working on my craft and expand my skill set. I am passionate, expresive and a natural leader. I don't settle for anything other than perfection.</p>
-    <p>My energetic personallity feuls me in the persuit of many of my interests, hobbies and my study. I am a fast learner that is not afraid to learn new skills and tools in my persuit for success.</p>
-    <p>Through my years as a student, I have learned a lot of new skills, I have familiarize myself with a few of programming languages for example, Python, C++, C#, Java and I have tinkered with a few more. I have learned the necessary skill set to be ably do delegate a team to design, implement and maintain systems for new besinesses.</p>
-    <p>I would like to become an expert in a wide variety of fields and I am striving to do that.</p>
-    <p>As an example of my desire to widening my skill set, I have made this CV of myself using technologies I have not used in the past namely, Angular 10 which consists of HTML, CSS and typescript. I have enjoyed the experience using the new technology to broaden my skill set very much and can't wait to learn more of the technologies that are available to us in this modern age we live in.</p>
-    <p>I thoroughly enjoy what I am doing and I will keep on widening my skill set to become a better programmer, manager or were ever I might find myself, all I know is wherever I will be I will always give a hundred and ten percent to achieve my goal.</p>
+    <div>
+      <h2>Hallo, I am Jandre Erasmus. I am currently a final-year student studing for a degree in Information Technology at the North-West University.</h2>
+    </div>
+    I like to describe myself as a well rounded person. I have worked on a number of projects while I was busy studing at the University and as a student I don't define myself by the work that I have done, but to the work that I want to do, as I student to the craft, I want to keep learning new skills, challenge myself to become the best version of me that I possible can be.
+    I like to think that I am a highly energetic person, fueled by curiosity to keep working on my craft and expand my skill set. I am passionate, expresive and a natural leader. I don't settle for anything other than perfection.
+    My energetic personallity feuls me in the persuit of many of my interests, hobbies and my study. I am a fast learner that is not afraid to learn new skills and tools in my persuit for success.
+    Through my years as a student, I have learned a lot of new skills, I have familiarize myself with a few of programming languages for example, Python, C++, C#, Java and I have tinkered with a few more. I have learned the necessary skill set to be ably do delegate a team to design, implement and maintain systems for new besinesses.
+    I would like to become an expert in a wide variety of fields and I am striving to do that.
+    As an example of my desire to widening my skill set, I have made this CV of myself using technologies I have not used in the past namely, Angular 10 which consists of HTML, CSS and typescript. I have enjoyed the experience using the new technology to broaden my skill set very much and can't wait to learn more of the technologies that are available to us in this modern age we live in.
+    I thoroughly enjoy what I am doing and I will keep on widening my skill set to become a better programmer, manager or were ever I might find myself, all I know is wherever I will be I will always give a hundred and ten percent to achieve my goal.
   </section>
 
   <section id = "Sport" class="sec3content">
@@ -60,7 +70,7 @@
   <section id="Employment History" class="sec4content">
     <!--Here is my employment history where I list my previous employments-->
     <h1>Employment History</h1>
-    <p>Before I started studing at the university I worked at Bakkielinings & Sandblasting as a Debit and Credit Clerk(16.01.2017 - 2017.12.15). My duties included of processing invoices and bank account on Pastel, the owner is Paul Erasmus, telephone - 082 888 9171.</p>
+    Before I started studing at the university I worked at Bakkielinings & Sandblasting as a Debit and Credit Clerk(16.01.2017 - 2017.12.15). My duties included of processing invoices and bank account on Pastel, the owner is Paul Erasmus, telephone - 082 888 9171.
     <p>I also worked vacation job at Bothaville Rekenaar dienste. where I helped build computers and general maintenance on computers. The owner is Kobie de Beer, telephone - 083 284 9248</p>
     <p>I had another vacation job at Madeleine Neilson Ouditeure, where I helped with filing and sorting of documents and general computer maintenance. The owner is Madeleine Neilson, telephone - 083 257 6061.</p>
     
@@ -88,7 +98,6 @@
     <!--Below is the for loop I used to traverse through the loop and display the joke evertime the page gets loaded-->
     <div class="joke-wrapper" *ngFor="let j of jokes">
       <div class="joke">
-        <img src="{{j.icon_url}}" alt="Icon">
         <p>{{j.value}}</p>
       </div>
     </div>  
