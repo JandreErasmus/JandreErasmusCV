@@ -1,5 +1,6 @@
 /*This is the styliing for the body of the html */
 body{
+    justify-content: center;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
