@@ -1,3 +1,9 @@
+Hallo my name is Jandre thanks for reading my CV
+
+Technologies used
+I chose angular 10 it is considered as one of the most popular programming languages. I also chose it because I have never worked with angular before and wanted to expand my skills. I have a little bit of html and css experience but typescript was new and I have enjoyed Angular very much and will use it in the future.
+
+I chose to use Microsoft Azure: Cloud Computing Services to host my website. Azure commands an approx of 19% market in cloud platforms and services, making it second in the space only to Amazon AWS
 # JandreErasmusCV
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
